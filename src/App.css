@@ -1,33 +1,70 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.App ul {
+  list-style-type: none;
+}
+.App > nav {
+  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% ;
+}
+.App > nav + div {
+  padding-top: 87px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App ul.ingredients li:hover {
+  background-color: #cfd8dc;
+}
+
+.App .checkout form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Store nav {
+  display: flex;
+}
+.Store nav > div {
+  margin-right: 10px;
+}
+.Store nav a.selection {
+  background-color: #cfd8dc;
+  color: #039be5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a.nav-link {
+  color: #039be5;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  width: 250px;
 }
+a.nav-link.active {
+  color: #039be5;
+}
+
+.basket .total {
+  margin-top: 20px;
+  background-color: #eee;
+  padding: 5px 10px;
+  width: 250px;
+  display: inline-block;
+}
+
+.basket ul button {
+  margin-top: 5px;
+}
+.basket ul{
+  margin: 0;
+}
+.basket h4 {
+  margin-bottom: 0;
+}
+
